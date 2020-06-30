@@ -8,7 +8,7 @@ namespace Registro_de_Certificados.view.empregado
         public infoCursos()
         {
             InitializeComponent();
-            Carregar(Session.GetColaborador());
+            Carregar(Session.GetColaborador()); //teste de merge
         }
 
         public void Carregar(Colaborador c)
