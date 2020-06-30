@@ -9,7 +9,7 @@ namespace Registro_de_Certificados.model.Gerenciador
 
         public GerenciadorCursos(List<Formacao> cursos)
         {
-            Cursos = cursos; // vocês são cornos
+            Cursos = cursos;
         }
 
         public (int, double, int) CalcularPontos_Media()
