@@ -35,7 +35,7 @@ namespace Registro_de_Certificados.view.empregado
                 DataTermino = date_termino.Value,
                 Valido = true,
             };
-            Funcionario f = Session.GetFuncionario();
+            Colaborador f = Session.GetColaborador();
                 f.AdicionarCurso(curso);
             Dispose();
         }

@@ -11,11 +11,11 @@ namespace Registro_de_Certificados.DAO.modelDAO
 {
     public class FuncionarioDAO : DataBaseConnection
     {
-        private IMongoCollection<Funcionario> collection;
+        private IMongoCollection<Colaborador> collection;
 
         public FuncionarioDAO()
         {
-            collection = GetConnection().GetCollection<Funcionario>("Funcionario");
+            collection = GetConnection().GetCollection<Colaborador>("Funcionario");
         }
 
         private bool ConnectionOk()
@@ -24,7 +24,7 @@ namespace Registro_de_Certificados.DAO.modelDAO
             return isMongoLive;
         }
 
-        public Funcionario Entrar(Usuario usuario)
+        public Colaborador Entrar(Usuario usuario)
         {
             if (!ConnectionOk()) return null;
             try
@@ -40,22 +40,22 @@ namespace Registro_de_Certificados.DAO.modelDAO
                 return funcionario;
             }
             catch (Exception) {
-                return new Funcionario();
+                return new Colaborador();
             }
             
         }
 
-        public void InsertFuncionario(Funcionario funcionario)
+        public void InsertFuncionario(Colaborador funcionario)
         {
             collection.InsertOne(funcionario);
         }
 
-        public void AtualizarFuncionario(Funcionario funcionario)
+        public void AtualizarFuncionario(Colaborador funcionario)
         {
             collection.ReplaceOne(f => f.Id == funcionario.Id, funcionario);
         }
 
-        public List<Funcionario> AllFuncionarios() => collection.Find(_ => true).ToList();
+        public List<Colaborador> AllFuncionarios() => collection.Find(_ => true).ToList();
 
         //public void DeleteFuncionario(Funcionario funcionario)
         //{

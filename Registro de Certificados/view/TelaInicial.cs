@@ -8,7 +8,7 @@ namespace Registro_de_Certificados.view
 {
     public partial class TelaInicial : Form
     {
-        public TelaInicial(Funcionario func)
+        public TelaInicial(Colaborador func)
         {
 
             InitializeComponent();
@@ -25,7 +25,7 @@ namespace Registro_de_Certificados.view
             Dispose();
         }
 
-        private void CarregarDados(Funcionario f)
+        private void CarregarDados(Colaborador f)
         {
             
             lbl_nome.Text = f.Nome;
@@ -37,7 +37,7 @@ namespace Registro_de_Certificados.view
             if (f.Documentos.UrlFoto != null) pb_foto.ImageLocation = f.Documentos.UrlFoto;
         }
 
-        private void CarregarCursos(Funcionario f)
+        private void CarregarCursos(Colaborador f)
         {
             baseCursos.Controls.Clear();
             foreach (var curso in f.Formacoes)
@@ -74,7 +74,7 @@ namespace Registro_de_Certificados.view
             if (vde.IsDisposed)
             {
                 Show();
-                var func = Session.GetFuncionario();
+                var func = Session.GetColaborador();
                 CarregarDados(func);
                 CarregarCursos(func);
             } 
@@ -94,7 +94,7 @@ namespace Registro_de_Certificados.view
             if (vde.IsDisposed)
             {
                 Show();
-                var func = Session.GetFuncionario();
+                var func = Session.GetColaborador();
                 CarregarDados(func);
                 CarregarCursos(func);
             }

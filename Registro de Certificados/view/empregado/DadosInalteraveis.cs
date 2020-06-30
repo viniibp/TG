@@ -14,13 +14,13 @@ namespace Registro_de_Certificados.view.empregado
 {
     public partial class DadosInalteraveis : Form
     {
-        public DadosInalteraveis(Funcionario f)
+        public DadosInalteraveis(Colaborador f)
         {
             InitializeComponent();
             LoadDados(f);
         }
 
-        private void LoadDados(Funcionario f)
+        private void LoadDados(Colaborador f)
         {
             string vazio = "--------------------------------";
 

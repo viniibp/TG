@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Registro_de_Certificados.model;
 using System.Windows.Forms;
 
 namespace Registro_de_Certificados.view.empregado
@@ -15,6 +8,18 @@ namespace Registro_de_Certificados.view.empregado
         public infoCursos()
         {
             InitializeComponent();
+            Carregar(Session.GetColaborador());
+        }
+
+        public void Carregar(Colaborador c)
+        {
+            var manager = c.GerenciadorCursos();
+            var (pontos, media, validos) = manager.CalcularPontos_Media();
+
+            lb_cursos.Text = manager.TotalCursos().ToString();
+            lb_mediaPesos.Text = media.ToString();
+            lb_pontosTotais.Text = pontos.ToString();
+            lb_cursosValidos.Text = validos.ToString();
         }
     }
 }

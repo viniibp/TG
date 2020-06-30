@@ -97,6 +97,7 @@
     <Compile Include="model\Documentacao\DadosPessoais.cs" />
     <Compile Include="model\Documentacao\DadosTrabalhistas.cs" />
     <Compile Include="model\Documentacao\Documentos.cs" />
+    <Compile Include="model\Gerenciador\GerenciadorCursos.cs" />
     <Compile Include="model\Usuario.cs" />
     <Compile Include="Session.cs" />
     <Compile Include="utility\Curso.cs">
@@ -104,6 +105,12 @@
     </Compile>
     <Compile Include="utility\Curso.Designer.cs">
       <DependentUpon>Curso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utility\infoCursos\CursoDetalhado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="utility\infoCursos\CursoDetalhado.Designer.cs">
+      <DependentUpon>CursoDetalhado.cs</DependentUpon>
     </Compile>
     <Compile Include="utility\MD5Hash.cs" />
     <Compile Include="utility\Telefone.cs">
@@ -164,6 +171,9 @@
     </Compile>
     <EmbeddedResource Include="utility\Curso.resx">
       <DependentUpon>Curso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="utility\infoCursos\CursoDetalhado.resx">
+      <DependentUpon>CursoDetalhado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="utility\Telefone.resx">
       <DependentUpon>Telefone.cs</DependentUpon>

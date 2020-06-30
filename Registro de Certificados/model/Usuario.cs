@@ -11,7 +11,7 @@ namespace Registro_de_Certificados.model
         public string Username { get; set; }
         public string Senha { get; set; }
 
-        public Funcionario Entrar()
+        public Colaborador Entrar()
         {
             return new FuncionarioDAO().Entrar(this);
         }

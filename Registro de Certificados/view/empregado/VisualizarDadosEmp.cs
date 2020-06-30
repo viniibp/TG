@@ -24,7 +24,7 @@ namespace Registro_de_Certificados.view
 
         private void LoadDados()
         {
-            Funcionario f = Session.GetFuncionario();
+            Colaborador f = Session.GetColaborador();
             if (f.Contatos == null) f.Contatos = new Contato();
 
             lb_nome.Text = f.Nome;
@@ -61,7 +61,7 @@ namespace Registro_de_Certificados.view
 
         private void Salvar()
         {
-            Funcionario f = Session.GetFuncionario();
+            Colaborador f = Session.GetColaborador();
 
             f.Nome = text_nome.Text;
             f.Contatos.Email = text_email.Text;
@@ -91,7 +91,7 @@ namespace Registro_de_Certificados.view
         {
             flow_telefone.Controls.Clear();
 
-            Funcionario f = Session.GetFuncionario();
+            Colaborador f = Session.GetColaborador();
 
             if(f.Contatos.Telefones != null)
             {
@@ -131,7 +131,7 @@ namespace Registro_de_Certificados.view
 
         private void button_add_Click(object sender, EventArgs e)
         {
-            Funcionario f = Session.GetFuncionario();
+            Colaborador f = Session.GetColaborador();
 
 
             f.Contatos.AddTelefone(text_numero.Text);
@@ -141,7 +141,7 @@ namespace Registro_de_Certificados.view
 
         private void button_inalteravel_Click(object sender, EventArgs e)
         {
-            Funcionario f = Session.GetFuncionario();
+            Colaborador f = Session.GetColaborador();
             DadosInalteraveis di = new DadosInalteraveis(f);
             Hide();
             di.ShowDialog();

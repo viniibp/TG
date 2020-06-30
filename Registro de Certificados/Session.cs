@@ -4,10 +4,10 @@ namespace Registro_de_Certificados
 {
     public static class Session
     {
-        private static Funcionario Sessao;
+        private static Colaborador Sessao;
 
-        public static Funcionario GetFuncionario() => Sessao;
-        public static void SetSessao(Funcionario f) => Sessao = f;
+        public static Colaborador GetColaborador() => Sessao;
+        public static void SetSessao(Colaborador f) => Sessao = f;
         public static void CloseSession() => Sessao = null;
     }
 }

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Registro_de_Certificados.model
 {
-    public class Funcionario : Usuario
+    public class Colaborador : Usuario
     {
 
         public string Nome { get; set; }
@@ -17,6 +17,7 @@ namespace Registro_de_Certificados.model
 
         public bool AtivoContratado { get; set; } //saber se a pessoa ainda esta trabalhando na empresa
 
+        public Gerenciador.GerenciadorCursos GerenciadorCursos() => new Gerenciador.GerenciadorCursos(this.Formacoes);
 
         public void AtualizarDadosTrabalhistas(DadosTrabalhistas dt)
         {
