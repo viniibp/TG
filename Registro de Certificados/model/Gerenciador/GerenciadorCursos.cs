@@ -9,7 +9,7 @@ namespace Registro_de_Certificados.model.Gerenciador
 
         public GerenciadorCursos(List<Formacao> cursos)
         {
-            Cursos = cursos; // vocês são cornos
+            Cursos = cursos;
         }
 
         public (int, double, int) CalcularPontos_Media()
@@ -23,7 +23,7 @@ namespace Registro_de_Certificados.model.Gerenciador
                     validos++;
                 }
             });
-            return (pt, mediaPeso, validos);
+            return (pt, (mediaPeso/validos), validos);
         }
 
         public int TotalCursos() => Cursos.Count;
