@@ -64,5 +64,30 @@ namespace Registro_de_Certificados.view.empregado
         {
             Dispose();
         }
+
+        private void combo_tipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void text_areacurso_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddCurso_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
