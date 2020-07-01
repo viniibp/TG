@@ -18,6 +18,10 @@ namespace Registro_de_Certificados.utility.infoCursos
             lb_cargaHoraria.Text = f.CargaHoraria.ToString() + " Horas";
             lb_Inicio.Text = f.DataInicio.ToShortDateString();
             lb_Fim.Text = f.DataTermino.ToShortDateString();
+
+            lb_peso.Text = f.Peso.ToString();
+            lb_pontos.Text = f.Pontos.ToString();
+
             check_valido.Checked = f.Valido;
         }
     }

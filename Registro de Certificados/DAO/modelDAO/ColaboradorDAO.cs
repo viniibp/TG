@@ -9,11 +9,11 @@ using System.Linq;
 
 namespace Registro_de_Certificados.DAO.modelDAO
 {
-    public class FuncionarioDAO : DataBaseConnection
+    public class ColaboradorDAO : DataBaseConnection
     {
         private IMongoCollection<Colaborador> collection;
 
-        public FuncionarioDAO()
+        public ColaboradorDAO()
         {
             collection = GetConnection().GetCollection<Colaborador>("Funcionario");
         }
@@ -56,6 +56,8 @@ namespace Registro_de_Certificados.DAO.modelDAO
         }
 
         public List<Colaborador> AllFuncionarios() => collection.Find(_ => true).ToList();
+
+        public int Ranking(ObjectId id) => AllFuncionarios().OrderBy(f => f.GerenciadorCursos().Pontuacao()).ToList().FindIndex(c => c.Id == id);
 
         //public void DeleteFuncionario(Funcionario funcionario)
         //{

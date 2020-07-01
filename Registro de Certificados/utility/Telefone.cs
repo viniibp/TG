@@ -19,12 +19,12 @@ namespace Registro_de_Certificados.utility
 
         public string GetTelefone() => telefone;
 
-        public bool CanRemove() => !lb_numero.Enabled;
-
-        private void button_edit_Click(object sender, System.EventArgs e)
+        public void isEditing(bool edit)
         {
-
+            button_remove.Visible = edit;
         }
+
+        public bool CanRemove() => !lb_numero.Enabled;
 
         private void button_remove_Click(object sender, System.EventArgs e)
         {

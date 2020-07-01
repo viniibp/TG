@@ -35,6 +35,9 @@ namespace Registro_de_Certificados.view
             lbl_qtdCursos.Text = f.Formacoes.Count.ToString();
             lbl_tempoRegistrado.Text = f.TempoRegistrado().ToString();
             if (f.Documentos.UrlFoto != null) pb_foto.ImageLocation = f.Documentos.UrlFoto;
+
+            model.Gerenciador.GerenciadorCursos gc = new model.Gerenciador.GerenciadorCursos(f.Formacoes);
+            gc.Nivel(progressBar1, gc.Pontuacao());
         }
 
         private void CarregarCursos(Colaborador f)
@@ -106,6 +109,21 @@ namespace Registro_de_Certificados.view
             timer.Interval = 1000;
             timer.Elapsed += timer_Tick;
             timer.Start();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            InfoCursos infoCurso = new InfoCursos();
+            Hide();
+            infoCurso.ShowDialog();
+
+            if (infoCurso.IsDisposed)
+            {
+                Show();
+                var func = Session.GetColaborador();
+                CarregarDados(func);
+                CarregarCursos(func);
+            }
         }
     }
 }

@@ -148,6 +148,7 @@
             this.pic_certificado.Location = new System.Drawing.Point(172, 3);
             this.pic_certificado.Name = "pic_certificado";
             this.pic_certificado.Size = new System.Drawing.Size(97, 94);
+            this.pic_certificado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_certificado.TabIndex = 9;
             this.pic_certificado.TabStop = false;
             // 
@@ -282,6 +283,7 @@
             this.Name = "AddCurso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddCurso";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Disposer);
             ((System.ComponentModel.ISupportInitialize)(this.pic_certificado)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

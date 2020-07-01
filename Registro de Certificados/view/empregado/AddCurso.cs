@@ -1,4 +1,5 @@
-﻿using Registro_de_Certificados.model;
+﻿using MongoDB.Bson;
+using Registro_de_Certificados.model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,27 +17,51 @@ namespace Registro_de_Certificados.view.empregado
         public AddCurso()
         {
             InitializeComponent();
+
         }
 
         private void button_confirmapic_Click(object sender, EventArgs e)
         {
-
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.FileName = "";
+            openFileDialog.Title = "Selecione uma foto";
+            openFileDialog.Filter = "JPEG|*.JPG|PNG|*.png";
+            openFileDialog.ShowDialog();
+            pic_certificado.Image = Image.FromFile(openFileDialog.FileName);
         }
 
         private void button_salvar_Click(object sender, EventArgs e)
         {
             Formacao curso = new Formacao
             {
+                Id = ObjectId.GenerateNewId(),
                 NomeCurso = text_nomecurso.Text,
                 TipoCurso = combo_tipo.Items[combo_tipo.SelectedIndex].ToString(),
                 AreaCurso = text_areacurso.Text,
                 CargaHoraria = text_cargacurso.Text,
                 DataInicio = date_inicio.Value,
                 DataTermino = date_termino.Value,
-                Valido = true,
+                Valido = false,
+                Peso = 0,
+                Pontos = 0,
             };
+            curso.URLCertificado = urlImagem(pic_certificado.ImageLocation, curso.Id.ToString());
+
             Colaborador f = Session.GetColaborador();
-                f.AdicionarCurso(curso);
+            f.AdicionarCurso(curso);
+
+            Dispose();
+        }
+
+        private string urlImagem(string url, string id)
+        {
+            string novaUrl = Environment.CurrentDirectory+"\\..\\..\\certificados\\"+id+".jpg";
+            pic_certificado.Image.Save(novaUrl, pic_certificado.Image.RawFormat);
+            return novaUrl;
+        }
+
+        private void Disposer(object sender, FormClosedEventArgs e)
+        {
             Dispose();
         }
     }

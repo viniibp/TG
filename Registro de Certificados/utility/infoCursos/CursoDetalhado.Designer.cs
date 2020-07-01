@@ -30,17 +30,17 @@
         {
             this.check_valido = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lb_cargaHoraria = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lb_nomeCurso = new System.Windows.Forms.Label();
-            this.lb_peso = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lb_pontos = new System.Windows.Forms.Label();
             this.lb_Fim = new System.Windows.Forms.Label();
             this.lb_Inicio = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.lb_pontos = new System.Windows.Forms.Label();
+            this.lb_peso = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lb_cargaHoraria = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lb_nomeCurso = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +55,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.lb_Fim);
             this.panel1.Controls.Add(this.lb_Inicio);
             this.panel1.Controls.Add(this.label6);
@@ -69,38 +70,62 @@
             this.panel1.Controls.Add(this.check_valido);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1034, 94);
+            this.panel1.Size = new System.Drawing.Size(1022, 94);
             this.panel1.TabIndex = 1;
             // 
-            // lb_cargaHoraria
+            // lb_Fim
             // 
-            this.lb_cargaHoraria.AutoSize = true;
-            this.lb_cargaHoraria.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_cargaHoraria.Location = new System.Drawing.Point(235, 53);
-            this.lb_cargaHoraria.Name = "lb_cargaHoraria";
-            this.lb_cargaHoraria.Size = new System.Drawing.Size(18, 19);
-            this.lb_cargaHoraria.TabIndex = 11;
-            this.lb_cargaHoraria.Text = "0";
+            this.lb_Fim.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lb_Fim.AutoSize = true;
+            this.lb_Fim.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Fim.Location = new System.Drawing.Point(907, 50);
+            this.lb_Fim.Name = "lb_Fim";
+            this.lb_Fim.Size = new System.Drawing.Size(91, 19);
+            this.lb_Fim.TabIndex = 19;
+            this.lb_Fim.Text = "00/00/0000";
             // 
-            // label3
+            // lb_Inicio
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(118, 53);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 19);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Carga horária:";
+            this.lb_Inicio.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lb_Inicio.AutoSize = true;
+            this.lb_Inicio.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Inicio.Location = new System.Drawing.Point(907, 18);
+            this.lb_Inicio.Name = "lb_Inicio";
+            this.lb_Inicio.Size = new System.Drawing.Size(91, 19);
+            this.lb_Inicio.TabIndex = 18;
+            this.lb_Inicio.Text = "00/00/0000";
             // 
-            // lb_nomeCurso
+            // label6
             // 
-            this.lb_nomeCurso.AutoSize = true;
-            this.lb_nomeCurso.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_nomeCurso.Location = new System.Drawing.Point(118, 19);
-            this.lb_nomeCurso.Name = "lb_nomeCurso";
-            this.lb_nomeCurso.Size = new System.Drawing.Size(125, 19);
-            this.lb_nomeCurso.TabIndex = 9;
-            this.lb_nomeCurso.Text = "Nome completo";
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(795, 50);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(113, 19);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Data termino:";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(814, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(97, 19);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Data inicio:";
+            // 
+            // lb_pontos
+            // 
+            this.lb_pontos.AutoSize = true;
+            this.lb_pontos.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_pontos.Location = new System.Drawing.Point(534, 19);
+            this.lb_pontos.Name = "lb_pontos";
+            this.lb_pontos.Size = new System.Drawing.Size(18, 19);
+            this.lb_pontos.TabIndex = 15;
+            this.lb_pontos.Text = "0";
             // 
             // lb_peso
             // 
@@ -132,59 +157,35 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Pontos";
             // 
-            // lb_pontos
+            // lb_cargaHoraria
             // 
-            this.lb_pontos.AutoSize = true;
-            this.lb_pontos.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_pontos.Location = new System.Drawing.Point(534, 19);
-            this.lb_pontos.Name = "lb_pontos";
-            this.lb_pontos.Size = new System.Drawing.Size(18, 19);
-            this.lb_pontos.TabIndex = 15;
-            this.lb_pontos.Text = "0";
+            this.lb_cargaHoraria.AutoSize = true;
+            this.lb_cargaHoraria.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_cargaHoraria.Location = new System.Drawing.Point(235, 53);
+            this.lb_cargaHoraria.Name = "lb_cargaHoraria";
+            this.lb_cargaHoraria.Size = new System.Drawing.Size(18, 19);
+            this.lb_cargaHoraria.TabIndex = 11;
+            this.lb_cargaHoraria.Text = "0";
             // 
-            // lb_Fim
+            // label3
             // 
-            this.lb_Fim.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lb_Fim.AutoSize = true;
-            this.lb_Fim.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Fim.Location = new System.Drawing.Point(921, 51);
-            this.lb_Fim.Name = "lb_Fim";
-            this.lb_Fim.Size = new System.Drawing.Size(91, 19);
-            this.lb_Fim.TabIndex = 19;
-            this.lb_Fim.Text = "00/00/0000";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(118, 53);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 19);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Carga horária:";
             // 
-            // lb_Inicio
+            // lb_nomeCurso
             // 
-            this.lb_Inicio.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lb_Inicio.AutoSize = true;
-            this.lb_Inicio.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Inicio.Location = new System.Drawing.Point(921, 19);
-            this.lb_Inicio.Name = "lb_Inicio";
-            this.lb_Inicio.Size = new System.Drawing.Size(91, 19);
-            this.lb_Inicio.TabIndex = 18;
-            this.lb_Inicio.Text = "00/00/0000";
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(809, 51);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 19);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Data termino:";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(828, 19);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 19);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Data inicio:";
+            this.lb_nomeCurso.AutoSize = true;
+            this.lb_nomeCurso.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_nomeCurso.Location = new System.Drawing.Point(118, 19);
+            this.lb_nomeCurso.Name = "lb_nomeCurso";
+            this.lb_nomeCurso.Size = new System.Drawing.Size(125, 19);
+            this.lb_nomeCurso.TabIndex = 9;
+            this.lb_nomeCurso.Text = "Nome completo";
             // 
             // CursoDetalhado
             // 

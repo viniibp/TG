@@ -64,11 +64,10 @@ namespace Registro_de_Certificados
             //    po.Deletar();
             //}
 
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
-
         }
+
     }
 }
