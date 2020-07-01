@@ -63,23 +63,26 @@ namespace Registro_de_Certificados.model
             else return 0;
         }
 
+        public int Ranking() => new ColaboradorDAO().Ranking(Id) + 1;
+        
+
         //Salvar - Atualizar - Deletar -----------------------------------------------------------------------
 
         public void Salvar()
         {
             if (DadosTrabalhistas == null) DadosTrabalhistas = new List<DadosTrabalhistas>();
-            new FuncionarioDAO().InsertFuncionario(this);
+            new ColaboradorDAO().InsertFuncionario(this);
         }
 
         public void Atualizar()
         {
-            new FuncionarioDAO().AtualizarFuncionario(this);
+            new ColaboradorDAO().AtualizarFuncionario(this);
         }
 
         public void DesativarFuncionario()
         {
             AtivoContratado = false;
-            new FuncionarioDAO().AtualizarFuncionario(this);
+            new ColaboradorDAO().AtualizarFuncionario(this);
         }
 
     }

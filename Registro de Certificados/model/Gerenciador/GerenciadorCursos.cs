@@ -48,8 +48,6 @@ namespace Registro_de_Certificados.model.Gerenciador
             return lvl;
         }
 
-        public int Ranking() => 0;
-
     }
 
     public class Nivel

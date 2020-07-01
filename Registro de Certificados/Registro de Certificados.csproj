@@ -91,7 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DataBaseConnection.cs" />
-    <Compile Include="DAO\modelDAO\FuncionarioDAO.cs" />
+    <Compile Include="DAO\modelDAO\ColaboradorDAO.cs" />
     <Compile Include="model\Documentacao\CarteiraTrabalho.cs" />
     <Compile Include="model\Documentacao\Contato.cs" />
     <Compile Include="model\Documentacao\DadosPessoais.cs" />

@@ -22,7 +22,7 @@ namespace Registro_de_Certificados.view.empregado
             lb_pontosTotais.Text = pontos.ToString();
             lb_cursosValidos.Text = validos.ToString();
 
-            lb_ranking.Text = manager.Ranking().ToString();
+            lb_ranking.Text = c.Ranking().ToString();
 
             var nivel = manager.Nivel(pb_nivel, pontos);
 

@@ -13,7 +13,7 @@ namespace Registro_de_Certificados.model
 
         public Colaborador Entrar()
         {
-            return new FuncionarioDAO().Entrar(this);
+            return new ColaboradorDAO().Entrar(this);
         }
     }
 }
