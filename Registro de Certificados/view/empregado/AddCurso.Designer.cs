@@ -282,6 +282,7 @@
             this.Name = "AddCurso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddCurso";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Disposer);
             ((System.ComponentModel.ISupportInitialize)(this.pic_certificado)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

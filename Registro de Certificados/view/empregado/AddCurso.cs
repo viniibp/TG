@@ -42,5 +42,10 @@ namespace Registro_de_Certificados.view.empregado
             f.AdicionarCurso(curso);
             Dispose();
         }
+
+        private void Disposer(object sender, FormClosedEventArgs e)
+        {
+            Dispose();
+        }
     }
 }
