@@ -62,34 +62,34 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(8, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 33);
+            this.label1.Size = new System.Drawing.Size(216, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome do Curso";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(4, 8);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 33);
+            this.label2.Size = new System.Drawing.Size(75, 31);
             this.label2.TabIndex = 1;
             this.label2.Text = "Area";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(4, 11);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 33);
+            this.label3.Size = new System.Drawing.Size(84, 31);
             this.label3.TabIndex = 2;
             this.label3.Text = "Inicio";
             // 
@@ -98,17 +98,17 @@
             this.date_inicio.Location = new System.Drawing.Point(134, 21);
             this.date_inicio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.date_inicio.Name = "date_inicio";
-            this.date_inicio.Size = new System.Drawing.Size(362, 27);
+            this.date_inicio.Size = new System.Drawing.Size(362, 26);
             this.date_inicio.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(4, 8);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 33);
+            this.label4.Size = new System.Drawing.Size(120, 31);
             this.label4.TabIndex = 4;
             this.label4.Text = "Termino";
             // 
@@ -117,28 +117,28 @@
             this.date_termino.Location = new System.Drawing.Point(134, 16);
             this.date_termino.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.date_termino.Name = "date_termino";
-            this.date_termino.Size = new System.Drawing.Size(362, 27);
+            this.date_termino.Size = new System.Drawing.Size(362, 26);
             this.date_termino.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(4, 8);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(202, 33);
+            this.label5.Size = new System.Drawing.Size(197, 31);
             this.label5.TabIndex = 6;
             this.label5.Text = "Carga Horaria";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(8, 55);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(160, 33);
+            this.label6.Size = new System.Drawing.Size(156, 31);
             this.label6.TabIndex = 7;
             this.label6.Text = "Certificado";
             // 
@@ -146,12 +146,12 @@
             // 
             this.button_confirmapic.BackColor = System.Drawing.Color.Transparent;
             this.button_confirmapic.ForeColor = System.Drawing.Color.Black;
-            this.button_confirmapic.Location = new System.Drawing.Point(419, 55);
+            this.button_confirmapic.Location = new System.Drawing.Point(404, 44);
             this.button_confirmapic.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_confirmapic.Name = "button_confirmapic";
-            this.button_confirmapic.Size = new System.Drawing.Size(74, 58);
+            this.button_confirmapic.Size = new System.Drawing.Size(94, 74);
             this.button_confirmapic.TabIndex = 8;
-            this.button_confirmapic.Text = "button1";
+            this.button_confirmapic.Text = "Carregar Imagem";
             this.button_confirmapic.UseVisualStyleBackColor = false;
             this.button_confirmapic.Click += new System.EventHandler(this.button_confirmapic_Click);
             // 
@@ -271,7 +271,7 @@
             // 
             // button_salvar
             // 
-            this.button_salvar.Location = new System.Drawing.Point(376, 693);
+            this.button_salvar.Location = new System.Drawing.Point(939, 630);
             this.button_salvar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_salvar.Name = "button_salvar";
             this.button_salvar.Size = new System.Drawing.Size(112, 37);
@@ -291,7 +291,7 @@
             this.combo_tipo.Location = new System.Drawing.Point(571, 145);
             this.combo_tipo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.combo_tipo.Name = "combo_tipo";
-            this.combo_tipo.Size = new System.Drawing.Size(301, 29);
+            this.combo_tipo.Size = new System.Drawing.Size(301, 28);
             this.combo_tipo.TabIndex = 20;
             this.combo_tipo.Text = "       ------------------------";
             this.combo_tipo.SelectedIndexChanged += new System.EventHandler(this.combo_tipo_SelectedIndexChanged);
@@ -300,23 +300,23 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(641, 103);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(192, 33);
+            this.label7.Size = new System.Drawing.Size(197, 31);
             this.label7.TabIndex = 21;
             this.label7.Text = "Tipo de Curso";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // AddCurso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Registro_de_Certificados.Properties.Resources.fundo_azul_small2;
-            this.ClientSize = new System.Drawing.Size(969, 748);
+            this.ClientSize = new System.Drawing.Size(1064, 681);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.combo_tipo);
             this.Controls.Add(this.button_salvar);
@@ -326,7 +326,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AddCurso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

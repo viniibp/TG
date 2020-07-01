@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.txt_username = new System.Windows.Forms.TextBox();
             this.lbl_aviso = new System.Windows.Forms.Label();
+            this.txt_username = new System.Windows.Forms.TextBox();
             this.txt_senha = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -40,12 +40,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(65, 171);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 21);
+            this.label1.Size = new System.Drawing.Size(71, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuario";
             // 
@@ -74,16 +74,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txt_username
-            // 
-            this.txt_username.BackColor = System.Drawing.Color.White;
-            this.txt_username.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_username.Location = new System.Drawing.Point(162, 168);
-            this.txt_username.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txt_username.Name = "txt_username";
-            this.txt_username.Size = new System.Drawing.Size(212, 27);
-            this.txt_username.TabIndex = 3;
-            // 
             // lbl_aviso
             // 
             this.lbl_aviso.AutoSize = true;
@@ -91,40 +81,44 @@
             this.lbl_aviso.Location = new System.Drawing.Point(318, 390);
             this.lbl_aviso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_aviso.Name = "lbl_aviso";
-            this.lbl_aviso.Size = new System.Drawing.Size(0, 21);
+            this.lbl_aviso.Size = new System.Drawing.Size(0, 20);
             this.lbl_aviso.TabIndex = 5;
+            // 
+            // txt_username
+            // 
+            this.txt_username.Location = new System.Drawing.Point(165, 165);
+            this.txt_username.Name = "txt_username";
+            this.txt_username.Size = new System.Drawing.Size(225, 26);
+            this.txt_username.TabIndex = 6;
             // 
             // txt_senha
             // 
-            this.txt_senha.Location = new System.Drawing.Point(162, 295);
-            this.txt_senha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_senha.Location = new System.Drawing.Point(165, 300);
             this.txt_senha.Name = "txt_senha";
-            this.txt_senha.Size = new System.Drawing.Size(212, 27);
-            this.txt_senha.TabIndex = 6;
-            this.txt_senha.UseSystemPasswordChar = true;
+            this.txt_senha.Size = new System.Drawing.Size(225, 26);
+            this.txt_senha.TabIndex = 7;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Registro_de_Certificados.Properties.Resources.fundo_azul_small2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(506, 514);
             this.Controls.Add(this.txt_senha);
-            this.Controls.Add(this.lbl_aviso);
             this.Controls.Add(this.txt_username);
+            this.Controls.Add(this.lbl_aviso);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela de Login";
-            this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.TransparencyKey = System.Drawing.Color.Black;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,8 +129,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txt_username;
         private System.Windows.Forms.Label lbl_aviso;
+        private System.Windows.Forms.TextBox txt_username;
         private System.Windows.Forms.TextBox txt_senha;
     }
 }

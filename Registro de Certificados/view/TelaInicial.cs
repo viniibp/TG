@@ -27,7 +27,6 @@ namespace Registro_de_Certificados.view
 
         private void CarregarDados(Colaborador f)
         {
-            
             lbl_nome.Text = f.Nome;
             lbl_cargo.Text = f.DadosTrabalhistas[0].Cargo;
             lbl_registro.Text = f.DadosTrabalhistas[0].Registro;

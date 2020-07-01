@@ -26,15 +26,18 @@ namespace Registro_de_Certificados.model.Gerenciador
 
         public (double, int) CalcularMedia_Validos()
         {
-            int mediaPeso = 0, validos = 0;
+            int somaPesos = 0, validos = 0;
             Cursos.ForEach(f => {
                 if (f.Valido)
                 {
-                    mediaPeso += f.Peso;
+                    somaPesos += f.Peso;
                     validos++;
                 }
             });
-            return ((mediaPeso/validos), validos);
+            double mediaPeso;
+            if (somaPesos == 0 || validos == 0) mediaPeso = 0;
+            else mediaPeso = (somaPesos / validos);
+            return (mediaPeso, validos);
         }
 
         public int TotalCursos() => Cursos.Count;
