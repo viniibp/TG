@@ -131,11 +131,11 @@
     <Compile Include="view\empregado\DadosInalteraveis.Designer.cs">
       <DependentUpon>DadosInalteraveis.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\empregado\infoCursos.cs">
+    <Compile Include="view\empregado\InfoCursos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\empregado\infoCursos.Designer.cs">
-      <DependentUpon>infoCursos.cs</DependentUpon>
+    <Compile Include="view\empregado\InfoCursos.Designer.cs">
+      <DependentUpon>InfoCursos.cs</DependentUpon>
     </Compile>
     <Compile Include="view\empregado\VisualizarDadosEmp.cs">
       <SubType>Form</SubType>
@@ -156,7 +156,7 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="model\Formacao.cs" />
-    <Compile Include="model\Funcionario.cs" />
+    <Compile Include="model\Colaborador.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -184,8 +184,8 @@
     <EmbeddedResource Include="view\empregado\DadosInalteraveis.resx">
       <DependentUpon>DadosInalteraveis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\empregado\infoCursos.resx">
-      <DependentUpon>infoCursos.cs</DependentUpon>
+    <EmbeddedResource Include="view\empregado\InfoCursos.resx">
+      <DependentUpon>InfoCursos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\empregado\VisualizarDadosEmp.resx">
       <DependentUpon>VisualizarDadosEmp.cs</DependentUpon>

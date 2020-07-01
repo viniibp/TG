@@ -1,6 +1,5 @@
 ﻿using Registro_de_Certificados.DAO.modelDAO;
 using Registro_de_Certificados.model.Documentacao;
-using System;
 using System.Collections.Generic;
 
 namespace Registro_de_Certificados.model

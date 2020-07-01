@@ -1,6 +1,6 @@
 ﻿namespace Registro_de_Certificados.view.empregado
 {
-    partial class infoCursos
+    partial class InfoCursos
     {
         /// <summary>
         /// Required designer variable.

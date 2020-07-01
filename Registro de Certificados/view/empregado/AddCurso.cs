@@ -34,9 +34,12 @@ namespace Registro_de_Certificados.view.empregado
                 DataInicio = date_inicio.Value,
                 DataTermino = date_termino.Value,
                 Valido = true,
+                Peso = 0,
+                Pontos = 0
             };
+
             Colaborador f = Session.GetColaborador();
-                f.AdicionarCurso(curso);
+            f.AdicionarCurso(curso);
             Dispose();
         }
     }

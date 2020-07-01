@@ -28,7 +28,7 @@ namespace Registro_de_Certificados.model
         public int Pontos { get; set; }
         public int Peso { get; set; }
 
-        public int DefinirPontos(int pontos) => Pontos * Peso;
+        public int DefinirPontos(int pontos) => Pontos = pontos * Peso;
         
     }
 }

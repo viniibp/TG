@@ -13,7 +13,6 @@ namespace Registro_de_Certificados
             txt_username.Text = "admin";
             txt_senha.Text = "123";
             var funcionario = Usuario().Entrar();
-
             TelaInicial homeTela = new TelaInicial(funcionario);
 
             Hide();

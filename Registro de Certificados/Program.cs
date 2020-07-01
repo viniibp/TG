@@ -68,7 +68,7 @@ namespace Registro_de_Certificados
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
-
         }
+
     }
 }

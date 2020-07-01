@@ -3,23 +3,30 @@ using System.Windows.Forms;
 
 namespace Registro_de_Certificados.view.empregado
 {
-    public partial class infoCursos : Form
+    public partial class InfoCursos : Form
     {
-        public infoCursos()
+        public InfoCursos()
         {
             InitializeComponent();
-            Carregar(Session.GetColaborador()); //teste de merge
+            Carregar(Session.GetColaborador()); 
         }
 
         public void Carregar(Colaborador c)
         {
             var manager = c.GerenciadorCursos();
-            var (pontos, media, validos) = manager.CalcularPontos_Media();
+            var (media, validos) = manager.CalcularMedia_Validos();
+            var pontos = manager.Pontuacao();
 
             lb_cursos.Text = manager.TotalCursos().ToString();
             lb_mediaPesos.Text = media.ToString();
             lb_pontosTotais.Text = pontos.ToString();
             lb_cursosValidos.Text = validos.ToString();
+
+            lb_ranking.Text = manager.Ranking().ToString();
+
+            var nivel = manager.Nivel(pb_nivel, pontos);
+
+            lb_nivel.Text = "Nivel " +nivel.Level;
         }
     }
 }
