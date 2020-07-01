@@ -57,6 +57,11 @@ namespace Registro_de_Certificados.view
             {
                 SetTexts();
             }
+
+            foreach (Telefone modelo in flow_telefone.Controls)
+            {
+                modelo.isEditing(isEditing);
+            }
         }
 
         private void Salvar()
