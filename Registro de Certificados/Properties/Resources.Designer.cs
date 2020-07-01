@@ -19,7 +19,7 @@ namespace Registro_de_Certificados.Properties {
     // através de uma ferramenta como ResGen ou Visual Studio.
     // Para adicionar ou remover um associado, edite o arquivo .ResX e execute ResGen novamente
     // com a opção /str, ou recrie o projeto do VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,111 @@ namespace Registro_de_Certificados.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap abstract_vector_graphic_brochure_design_background_purple_black_trends_2018_71775_58 {
+            get {
+                object obj = ResourceManager.GetObject("abstract-vector-graphic-brochure-design-background-purple-black-trends-2018_71775" +
+                        "-58", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BLUE_BACKGROUND {
+            get {
+                object obj = ResourceManager.GetObject("BLUE BACKGROUND", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundo_azul_small2 {
+            get {
+                object obj = ResourceManager.GetObject("fundo-azul-small2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gettyimages_1152102628_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("gettyimages-1152102628-612x612", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nfVF1W {
+            get {
+                object obj = ResourceManager.GetObject("nfVF1W", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nfVF1W1 {
+            get {
+                object obj = ResourceManager.GetObject("nfVF1W1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thumb2_purple_knitted_texture_purple_fabric_background_fabric_texture_fabric_with_waves_purple_background {
+            get {
+                object obj = ResourceManager.GetObject("thumb2-purple-knitted-texture-purple-fabric-background-fabric-texture-fabric-with" +
+                        "-waves-purple-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thumb2_purple_knitted_texture_purple_fabric_background_fabric_texture_fabric_with_waves_purple_background1 {
+            get {
+                object obj = ResourceManager.GetObject("thumb2-purple-knitted-texture-purple-fabric-background-fabric-texture-fabric-with" +
+                        "-waves-purple-background1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thumb2_violet_fabric_texture_4k_violet_fabric_background_fabric_textures_violet_backgrounds {
+            get {
+                object obj = ResourceManager.GetObject("thumb2-violet-fabric-texture-4k-violet-fabric-background-fabric-textures-violet-b" +
+                        "ackgrounds", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thumb2_violet_fabric_texture_4k_violet_fabric_background_fabric_textures_violet_backgrounds1 {
+            get {
+                object obj = ResourceManager.GetObject("thumb2-violet-fabric-texture-4k-violet-fabric-background-fabric-textures-violet-b" +
+                        "ackgrounds1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

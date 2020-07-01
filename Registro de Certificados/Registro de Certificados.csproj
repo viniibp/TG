@@ -214,6 +214,7 @@
     <Folder Include="view\gp\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\imagens tela\fundo-azul-small2.png" />
     <Content Include="assets\user_placeholder.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

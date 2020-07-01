@@ -39,27 +39,36 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(169, 141);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(65, 171);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(67, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuario";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(169, 203);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(65, 304);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(57, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Senha";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(445, 293);
+            this.button1.Location = new System.Drawing.Point(198, 382);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(112, 37);
             this.button1.TabIndex = 2;
             this.button1.Text = "Entrar";
             this.button1.UseVisualStyleBackColor = false;
@@ -67,43 +76,55 @@
             // 
             // txt_username
             // 
-            this.txt_username.Location = new System.Drawing.Point(222, 138);
+            this.txt_username.BackColor = System.Drawing.Color.White;
+            this.txt_username.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_username.Location = new System.Drawing.Point(162, 168);
+            this.txt_username.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_username.Name = "txt_username";
-            this.txt_username.Size = new System.Drawing.Size(143, 20);
+            this.txt_username.Size = new System.Drawing.Size(212, 27);
             this.txt_username.TabIndex = 3;
             // 
             // lbl_aviso
             // 
             this.lbl_aviso.AutoSize = true;
             this.lbl_aviso.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lbl_aviso.Location = new System.Drawing.Point(212, 241);
+            this.lbl_aviso.Location = new System.Drawing.Point(318, 390);
+            this.lbl_aviso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_aviso.Name = "lbl_aviso";
-            this.lbl_aviso.Size = new System.Drawing.Size(0, 13);
+            this.lbl_aviso.Size = new System.Drawing.Size(0, 21);
             this.lbl_aviso.TabIndex = 5;
             // 
             // txt_senha
             // 
-            this.txt_senha.Location = new System.Drawing.Point(222, 196);
+            this.txt_senha.Location = new System.Drawing.Point(162, 295);
+            this.txt_senha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_senha.Name = "txt_senha";
-            this.txt_senha.Size = new System.Drawing.Size(143, 20);
+            this.txt_senha.Size = new System.Drawing.Size(212, 27);
             this.txt_senha.TabIndex = 6;
             this.txt_senha.UseSystemPasswordChar = true;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::Registro_de_Certificados.Properties.Resources.fundo_azul_small2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(506, 514);
             this.Controls.Add(this.txt_senha);
             this.Controls.Add(this.lbl_aviso);
             this.Controls.Add(this.txt_username);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela de Login";
+            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.ResumeLayout(false);
             this.PerformLayout();
 
