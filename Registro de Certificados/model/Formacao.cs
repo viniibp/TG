@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MongoDB.Bson;
+using System;
 
 namespace Registro_de_Certificados.model
 {
     public class Formacao
     {
+        [MongoDB.Bson.Serialization.Attributes.BsonId]
+        public ObjectId Id { get; set; }
+
         public string TipoCurso { get; set; }
-        
+
         /*
          Exemplo de tipo de cursos:
             FormacaoAcademica

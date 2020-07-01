@@ -9,5 +9,6 @@ namespace Registro_de_Certificados
         public static Colaborador GetColaborador() => Sessao;
         public static void SetSessao(Colaborador f) => Sessao = f;
         public static void CloseSession() => Sessao = null;
+
     }
 }

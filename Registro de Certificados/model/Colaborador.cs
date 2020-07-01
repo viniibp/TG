@@ -27,7 +27,8 @@ namespace Registro_de_Certificados.model
 
         public void AdicionarCurso(Formacao f)
         {
-            if (Formacoes == null) Formacoes = new List<Formacao>();
+            if (Formacoes == null)
+                Formacoes = new List<Formacao>();
             Formacoes.Add(f);
             Atualizar();
         }

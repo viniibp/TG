@@ -148,6 +148,7 @@
             this.pic_certificado.Location = new System.Drawing.Point(172, 3);
             this.pic_certificado.Name = "pic_certificado";
             this.pic_certificado.Size = new System.Drawing.Size(97, 94);
+            this.pic_certificado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_certificado.TabIndex = 9;
             this.pic_certificado.TabStop = false;
             // 
