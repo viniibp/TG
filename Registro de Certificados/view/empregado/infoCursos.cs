@@ -1,4 +1,6 @@
 ﻿using Registro_de_Certificados.model;
+using Registro_de_Certificados.utility.infoCursos;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Registro_de_Certificados.view.empregado
@@ -8,10 +10,12 @@ namespace Registro_de_Certificados.view.empregado
         public InfoCursos()
         {
             InitializeComponent();
-            Carregar(Session.GetColaborador()); 
+            Colaborador logado = Session.GetColaborador();
+            Carregar(logado);
+            listarCursos(logado.Formacoes);
         }
 
-        public void Carregar(Colaborador c)
+        private void Carregar(Colaborador c)
         {
             var manager = c.GerenciadorCursos();
             var (media, validos) = manager.CalcularMedia_Validos();
@@ -27,6 +31,22 @@ namespace Registro_de_Certificados.view.empregado
             var nivel = manager.Nivel(pb_nivel, pontos);
 
             lb_nivel.Text = "Nivel " +nivel.Level;
+        }
+
+        private void listarCursos(List<Formacao> formacoes)
+        {
+            formacoes.ForEach(f => PrepararCurso(f));
+        }
+
+        private void PrepararCurso(Formacao f)
+        {
+            CursoDetalhado cd = new CursoDetalhado(f);
+            flow_cursos.Controls.Add(cd);
+        }
+
+        private void InfoCursos_Load(object sender, System.EventArgs e)
+        {
+
         }
     }
 }
