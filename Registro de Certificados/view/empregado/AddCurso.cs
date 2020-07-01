@@ -22,12 +22,15 @@ namespace Registro_de_Certificados.view.empregado
 
         private void button_confirmapic_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.FileName = "";
-            openFileDialog.Title = "Selecione uma foto";
-            openFileDialog.Filter = "JPEG|*.JPG|PNG|*.png";
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                FileName = "",
+                Title = "Selecione uma foto",
+                Filter = "JPEG|*.JPG|PNG|*.png"
+            };
+
             openFileDialog.ShowDialog();
-            pic_certificado.Image = Image.FromFile(openFileDialog.FileName);
+            if(openFileDialog.FileName != "") pic_certificado.Image = Image.FromFile(openFileDialog.FileName);
         }
 
         private void button_salvar_Click(object sender, EventArgs e)
@@ -45,7 +48,7 @@ namespace Registro_de_Certificados.view.empregado
                 Peso = 0,
                 Pontos = 0,
             };
-            curso.URLCertificado = urlImagem(pic_certificado.ImageLocation, curso.Id.ToString());
+            curso.URLCertificado = urlImagem(curso.Id.ToString());
 
             Colaborador f = Session.GetColaborador();
             f.AdicionarCurso(curso);
@@ -53,7 +56,7 @@ namespace Registro_de_Certificados.view.empregado
             Dispose();
         }
 
-        private string urlImagem(string url, string id)
+        private string urlImagem(string id)
         {
             string novaUrl = Environment.CurrentDirectory+"\\..\\..\\certificados\\"+id+".jpg";
             pic_certificado.Image.Save(novaUrl, pic_certificado.Image.RawFormat);

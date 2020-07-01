@@ -15,8 +15,6 @@ namespace Registro_de_Certificados.view
             Session.SetSessao(func);
             CarregarDados(func);
             CarregarCursos(func);
-
-          
         }
 
         private void Disposer(object sender, FormClosedEventArgs e)
@@ -75,12 +73,9 @@ namespace Registro_de_Certificados.view
 
             if (vde.IsDisposed)
             {
-                Show();
-                var func = Session.GetColaborador();
-                CarregarDados(func);
-                CarregarCursos(func);
-            } 
-       }
+                Reload();
+            }
+        }
 
         private void button_logoff_Click(object sender, EventArgs e)
         {
@@ -95,10 +90,7 @@ namespace Registro_de_Certificados.view
 
             if (vde.IsDisposed)
             {
-                Show();
-                var func = Session.GetColaborador();
-                CarregarDados(func);
-                CarregarCursos(func);
+                Reload();
             }
         }
 
@@ -118,11 +110,16 @@ namespace Registro_de_Certificados.view
 
             if (infoCurso.IsDisposed)
             {
-                Show();
-                var func = Session.GetColaborador();
-                CarregarDados(func);
-                CarregarCursos(func);
+                Reload();
             }
+        }
+
+        private void Reload()
+        {
+            Show();
+            var func = Session.GetColaborador();
+            CarregarDados(func);
+            CarregarCursos(func);
         }
     }
 }

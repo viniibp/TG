@@ -48,5 +48,10 @@ namespace Registro_de_Certificados.view.empregado
         {
 
         }
+
+        private void Disposer(object sender, FormClosedEventArgs e)
+        {
+            Dispose();
+        }
     }
 }

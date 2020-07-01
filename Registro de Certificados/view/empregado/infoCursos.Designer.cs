@@ -203,6 +203,7 @@
             this.Name = "InfoCursos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "infoCursos";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Disposer);
             this.Load += new System.EventHandler(this.InfoCursos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
