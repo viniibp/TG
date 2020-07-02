@@ -47,6 +47,7 @@
             // check_valido
             // 
             this.check_valido.AutoSize = true;
+            this.check_valido.Enabled = false;
             this.check_valido.Location = new System.Drawing.Point(38, 40);
             this.check_valido.Name = "check_valido";
             this.check_valido.Size = new System.Drawing.Size(15, 14);
@@ -55,6 +56,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.lb_Fim);
             this.panel1.Controls.Add(this.lb_Inicio);
@@ -193,7 +195,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Name = "CursoDetalhado";
-            this.Size = new System.Drawing.Size(1040, 100);
+            this.Size = new System.Drawing.Size(1031, 100);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

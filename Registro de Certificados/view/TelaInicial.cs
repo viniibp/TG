@@ -34,7 +34,8 @@ namespace Registro_de_Certificados.view
             if (f.Documentos.UrlFoto != null) pb_foto.ImageLocation = f.Documentos.UrlFoto;
 
             model.Gerenciador.GerenciadorCursos gc = new model.Gerenciador.GerenciadorCursos(f.Formacoes);
-            gc.Nivel(progressBar1, gc.Pontuacao());
+            
+            lb_nivel.Text = "Nível "+ gc.Nivel(progressBar1, gc.Pontuacao()).Level.ToString();
         }
 
         private void CarregarCursos(Colaborador f)

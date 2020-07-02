@@ -84,7 +84,7 @@
             // text_nome
             // 
             this.text_nome.Enabled = false;
-            this.text_nome.Location = new System.Drawing.Point(269, 46);
+            this.text_nome.Location = new System.Drawing.Point(231, 48);
             this.text_nome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.text_nome.MaximumSize = new System.Drawing.Size(583, 48);
             this.text_nome.MinimumSize = new System.Drawing.Size(4, 48);
@@ -98,7 +98,7 @@
             // 
             this.lb_nome.AutoSize = true;
             this.lb_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_nome.Location = new System.Drawing.Point(263, 0);
+            this.lb_nome.Location = new System.Drawing.Point(225, 1);
             this.lb_nome.Name = "lb_nome";
             this.lb_nome.Size = new System.Drawing.Size(148, 31);
             this.lb_nome.TabIndex = 2;
@@ -110,10 +110,10 @@
             this.panel1.Controls.Add(this.text_nome);
             this.panel1.Controls.Add(this.lb_nome);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(149, 54);
+            this.panel1.Location = new System.Drawing.Point(12, 13);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(838, 100);
+            this.panel1.Size = new System.Drawing.Size(603, 100);
             this.panel1.TabIndex = 3;
             // 
             // panel2
@@ -122,7 +122,7 @@
             this.panel2.Controls.Add(this.text_cpf);
             this.panel2.Controls.Add(this.lb_cpf);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(149, 288);
+            this.panel2.Location = new System.Drawing.Point(12, 247);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(543, 100);
@@ -131,7 +131,7 @@
             // text_cpf
             // 
             this.text_cpf.Enabled = false;
-            this.text_cpf.Location = new System.Drawing.Point(269, 46);
+            this.text_cpf.Location = new System.Drawing.Point(231, 46);
             this.text_cpf.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.text_cpf.MinimumSize = new System.Drawing.Size(4, 48);
             this.text_cpf.Multiline = true;
@@ -144,7 +144,7 @@
             // 
             this.lb_cpf.AutoSize = true;
             this.lb_cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_cpf.Location = new System.Drawing.Point(263, 5);
+            this.lb_cpf.Location = new System.Drawing.Point(225, 5);
             this.lb_cpf.Name = "lb_cpf";
             this.lb_cpf.Size = new System.Drawing.Size(224, 31);
             this.lb_cpf.TabIndex = 2;
@@ -163,10 +163,11 @@
             // edit_save
             // 
             this.edit_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edit_save.Location = new System.Drawing.Point(1127, 690);
+            this.edit_save.ForeColor = System.Drawing.Color.Black;
+            this.edit_save.Location = new System.Drawing.Point(955, 606);
             this.edit_save.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.edit_save.Name = "edit_save";
-            this.edit_save.Size = new System.Drawing.Size(100, 54);
+            this.edit_save.Size = new System.Drawing.Size(100, 31);
             this.edit_save.TabIndex = 3;
             this.edit_save.Text = "Edit";
             this.edit_save.UseVisualStyleBackColor = true;
@@ -175,10 +176,11 @@
             // button_cancel
             // 
             this.button_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_cancel.Location = new System.Drawing.Point(1127, 768);
+            this.button_cancel.ForeColor = System.Drawing.Color.Black;
+            this.button_cancel.Location = new System.Drawing.Point(955, 641);
             this.button_cancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_cancel.Name = "button_cancel";
-            this.button_cancel.Size = new System.Drawing.Size(100, 56);
+            this.button_cancel.Size = new System.Drawing.Size(100, 35);
             this.button_cancel.TabIndex = 5;
             this.button_cancel.Text = "Voltar";
             this.button_cancel.UseVisualStyleBackColor = true;
@@ -191,7 +193,7 @@
             this.panel3.Controls.Add(this.lb_rg);
             this.panel3.Controls.Add(this.label3);
             this.panel3.ForeColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(149, 618);
+            this.panel3.Location = new System.Drawing.Point(12, 577);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(543, 100);
@@ -200,7 +202,7 @@
             // text_rg
             // 
             this.text_rg.Enabled = false;
-            this.text_rg.Location = new System.Drawing.Point(269, 46);
+            this.text_rg.Location = new System.Drawing.Point(231, 43);
             this.text_rg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.text_rg.MinimumSize = new System.Drawing.Size(4, 48);
             this.text_rg.Multiline = true;
@@ -213,7 +215,7 @@
             // 
             this.lb_rg.AutoSize = true;
             this.lb_rg.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_rg.Location = new System.Drawing.Point(263, 0);
+            this.lb_rg.Location = new System.Drawing.Point(225, 0);
             this.lb_rg.Name = "lb_rg";
             this.lb_rg.Size = new System.Drawing.Size(224, 31);
             this.lb_rg.TabIndex = 2;
@@ -235,7 +237,7 @@
             this.panel4.Controls.Add(this.text_titulo);
             this.panel4.Controls.Add(this.lb_titulo);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(149, 395);
+            this.panel4.Location = new System.Drawing.Point(12, 354);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(543, 100);
@@ -244,7 +246,7 @@
             // text_titulo
             // 
             this.text_titulo.Enabled = false;
-            this.text_titulo.Location = new System.Drawing.Point(269, 46);
+            this.text_titulo.Location = new System.Drawing.Point(231, 48);
             this.text_titulo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.text_titulo.MinimumSize = new System.Drawing.Size(4, 48);
             this.text_titulo.Multiline = true;
@@ -257,7 +259,7 @@
             // 
             this.lb_titulo.AutoSize = true;
             this.lb_titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titulo.Location = new System.Drawing.Point(263, 0);
+            this.lb_titulo.Location = new System.Drawing.Point(225, 0);
             this.lb_titulo.Name = "lb_titulo";
             this.lb_titulo.Size = new System.Drawing.Size(224, 31);
             this.lb_titulo.TabIndex = 2;
@@ -279,7 +281,7 @@
             this.panel5.Controls.Add(this.text_reservista);
             this.panel5.Controls.Add(this.lb_reservista);
             this.panel5.Controls.Add(this.label6);
-            this.panel5.Location = new System.Drawing.Point(149, 507);
+            this.panel5.Location = new System.Drawing.Point(12, 466);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(543, 100);
@@ -288,7 +290,7 @@
             // text_reservista
             // 
             this.text_reservista.Enabled = false;
-            this.text_reservista.Location = new System.Drawing.Point(269, 46);
+            this.text_reservista.Location = new System.Drawing.Point(231, 48);
             this.text_reservista.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.text_reservista.MinimumSize = new System.Drawing.Size(4, 48);
             this.text_reservista.Multiline = true;
@@ -301,7 +303,7 @@
             // 
             this.lb_reservista.AutoSize = true;
             this.lb_reservista.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_reservista.Location = new System.Drawing.Point(263, 5);
+            this.lb_reservista.Location = new System.Drawing.Point(225, 5);
             this.lb_reservista.Name = "lb_reservista";
             this.lb_reservista.Size = new System.Drawing.Size(224, 31);
             this.lb_reservista.TabIndex = 2;
@@ -323,16 +325,16 @@
             this.panel6.Controls.Add(this.text_email);
             this.panel6.Controls.Add(this.lb_email);
             this.panel6.Controls.Add(this.label7);
-            this.panel6.Location = new System.Drawing.Point(149, 171);
+            this.panel6.Location = new System.Drawing.Point(12, 130);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(838, 100);
+            this.panel6.Size = new System.Drawing.Size(603, 100);
             this.panel6.TabIndex = 9;
             // 
             // text_email
             // 
             this.text_email.Enabled = false;
-            this.text_email.Location = new System.Drawing.Point(269, 46);
+            this.text_email.Location = new System.Drawing.Point(231, 46);
             this.text_email.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.text_email.MaximumSize = new System.Drawing.Size(583, 4);
             this.text_email.MinimumSize = new System.Drawing.Size(4, 48);
@@ -346,7 +348,7 @@
             // 
             this.lb_email.AutoSize = true;
             this.lb_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_email.Location = new System.Drawing.Point(263, 0);
+            this.lb_email.Location = new System.Drawing.Point(225, 0);
             this.lb_email.Name = "lb_email";
             this.lb_email.Size = new System.Drawing.Size(327, 31);
             this.lb_email.TabIndex = 2;
@@ -365,7 +367,7 @@
             // text_numero
             // 
             this.text_numero.Enabled = false;
-            this.text_numero.Location = new System.Drawing.Point(719, 334);
+            this.text_numero.Location = new System.Drawing.Point(649, 176);
             this.text_numero.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.text_numero.MinimumSize = new System.Drawing.Size(4, 48);
             this.text_numero.Multiline = true;
@@ -379,7 +381,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(855, 288);
+            this.label2.Location = new System.Drawing.Point(785, 130);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 31);
             this.label2.TabIndex = 11;
@@ -389,7 +391,7 @@
             // 
             this.button_add.Enabled = false;
             this.button_add.ForeColor = System.Drawing.Color.Black;
-            this.button_add.Location = new System.Drawing.Point(994, 334);
+            this.button_add.Location = new System.Drawing.Point(924, 176);
             this.button_add.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_add.Name = "button_add";
             this.button_add.Size = new System.Drawing.Size(96, 50);
@@ -404,7 +406,7 @@
             this.panel_flow.AutoScroll = true;
             this.panel_flow.BackColor = System.Drawing.Color.Transparent;
             this.panel_flow.Controls.Add(this.flow_telefone);
-            this.panel_flow.Location = new System.Drawing.Point(698, 392);
+            this.panel_flow.Location = new System.Drawing.Point(627, 230);
             this.panel_flow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel_flow.Name = "panel_flow";
             this.panel_flow.Size = new System.Drawing.Size(418, 370);
@@ -413,15 +415,16 @@
             // flow_telefone
             // 
             this.flow_telefone.AutoSize = true;
+            this.flow_telefone.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flow_telefone.BackColor = System.Drawing.Color.Transparent;
             this.flow_telefone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flow_telefone.Controls.Add(this.panel8);
             this.flow_telefone.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flow_telefone.ForeColor = System.Drawing.Color.Black;
-            this.flow_telefone.Location = new System.Drawing.Point(2, 18);
+            this.flow_telefone.Location = new System.Drawing.Point(2, 5);
             this.flow_telefone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flow_telefone.Name = "flow_telefone";
-            this.flow_telefone.Size = new System.Drawing.Size(405, 322);
+            this.flow_telefone.Size = new System.Drawing.Size(8, 10);
             this.flow_telefone.TabIndex = 11;
             // 
             // panel8
@@ -436,10 +439,10 @@
             // 
             this.button_inalteravel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_inalteravel.ForeColor = System.Drawing.Color.Black;
-            this.button_inalteravel.Location = new System.Drawing.Point(820, 785);
+            this.button_inalteravel.Location = new System.Drawing.Point(780, 639);
             this.button_inalteravel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_inalteravel.Name = "button_inalteravel";
-            this.button_inalteravel.Size = new System.Drawing.Size(190, 56);
+            this.button_inalteravel.Size = new System.Drawing.Size(169, 37);
             this.button_inalteravel.TabIndex = 14;
             this.button_inalteravel.Text = "Inalteraveis";
             this.button_inalteravel.UseVisualStyleBackColor = true;
@@ -447,10 +450,9 @@
             // 
             // VisualizarDadosEmp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::Registro_de_Certificados.Properties.Resources.fundo_azul_small2;
-            this.ClientSize = new System.Drawing.Size(1123, 854);
+            this.ClientSize = new System.Drawing.Size(1064, 681);
             this.Controls.Add(this.button_inalteravel);
             this.Controls.Add(this.panel_flow);
             this.Controls.Add(this.button_add);
@@ -464,8 +466,9 @@
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Century Gothic", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "VisualizarDadosEmp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

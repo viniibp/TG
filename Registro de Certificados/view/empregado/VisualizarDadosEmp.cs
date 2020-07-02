@@ -14,6 +14,7 @@ namespace Registro_de_Certificados.view
         public VisualizarDadosEmp()
         {
             InitializeComponent();
+            panel_flow.HorizontalScroll.Enabled = false;
             LoadDados();
             isEditing = false;
         }

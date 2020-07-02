@@ -44,9 +44,9 @@ namespace Registro_de_Certificados.view.empregado
                 CargaHoraria = text_cargacurso.Text,
                 DataInicio = date_inicio.Value,
                 DataTermino = date_termino.Value,
-                Valido = false,
-                Peso = 0,
-                Pontos = 0,
+                Valido = true,
+                Peso = 3,
+                Pontos = 90
             };
             curso.URLCertificado = urlImagem(curso.Id.ToString());
 

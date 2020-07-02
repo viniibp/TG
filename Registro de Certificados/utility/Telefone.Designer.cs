@@ -35,7 +35,7 @@
             // button_remove
             // 
             this.button_remove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_remove.Location = new System.Drawing.Point(283, 7);
+            this.button_remove.Location = new System.Drawing.Point(273, 7);
             this.button_remove.Name = "button_remove";
             this.button_remove.Size = new System.Drawing.Size(34, 31);
             this.button_remove.TabIndex = 2;

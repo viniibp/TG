@@ -59,6 +59,7 @@
             this.button_logoff = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.lb_nivel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).BeginInit();
@@ -86,7 +87,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(32, 192);
+            this.button3.Location = new System.Drawing.Point(32, 188);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 4;
@@ -204,18 +205,19 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.lb_nivel);
             this.panel3.Controls.Add(this.progressBar1);
             this.panel3.Controls.Add(this.pb_foto);
-            this.panel3.Location = new System.Drawing.Point(1, 14);
+            this.panel3.Location = new System.Drawing.Point(1, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 165);
             this.panel3.TabIndex = 0;
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(46, 144);
+            this.progressBar1.Location = new System.Drawing.Point(61, 142);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(151, 13);
+            this.progressBar1.Size = new System.Drawing.Size(136, 13);
             this.progressBar1.TabIndex = 5;
             this.progressBar1.Value = 10;
             // 
@@ -309,7 +311,7 @@
             this.circularProgressBar1.OuterColor = System.Drawing.Color.Gray;
             this.circularProgressBar1.OuterMargin = -14;
             this.circularProgressBar1.OuterWidth = 14;
-            this.circularProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.circularProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(54)))), ((int)(((byte)(84)))));
             this.circularProgressBar1.ProgressWidth = 14;
             this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
             this.circularProgressBar1.Size = new System.Drawing.Size(126, 113);
@@ -388,7 +390,7 @@
             // 
             // button_logoff
             // 
-            this.button_logoff.Location = new System.Drawing.Point(143, 192);
+            this.button_logoff.Location = new System.Drawing.Point(143, 187);
             this.button_logoff.Name = "button_logoff";
             this.button_logoff.Size = new System.Drawing.Size(75, 23);
             this.button_logoff.TabIndex = 8;
@@ -411,6 +413,15 @@
             // 
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
+            // lb_nivel
+            // 
+            this.lb_nivel.AutoSize = true;
+            this.lb_nivel.Location = new System.Drawing.Point(17, 142);
+            this.lb_nivel.Name = "lb_nivel";
+            this.lb_nivel.Size = new System.Drawing.Size(34, 13);
+            this.lb_nivel.TabIndex = 4;
+            this.lb_nivel.Text = "Nivel ";
+            // 
             // TelaInicial
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -430,6 +441,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -476,5 +488,6 @@
         private System.Windows.Forms.Label lb_dateTime;
         private System.Windows.Forms.Label lb_sec;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label lb_nivel;
     }
 }
