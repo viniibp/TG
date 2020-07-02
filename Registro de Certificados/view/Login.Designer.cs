@@ -86,6 +86,8 @@
             // 
             // txt_username
             // 
+            this.txt_username.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_username.ForeColor = System.Drawing.Color.Black;
             this.txt_username.Location = new System.Drawing.Point(165, 165);
             this.txt_username.Name = "txt_username";
             this.txt_username.Size = new System.Drawing.Size(225, 26);
@@ -93,10 +95,13 @@
             // 
             // txt_senha
             // 
+            this.txt_senha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_senha.ForeColor = System.Drawing.Color.Black;
             this.txt_senha.Location = new System.Drawing.Point(165, 300);
             this.txt_senha.Name = "txt_senha";
             this.txt_senha.Size = new System.Drawing.Size(225, 26);
             this.txt_senha.TabIndex = 7;
+            this.txt_senha.UseSystemPasswordChar = true;
             // 
             // Login
             // 

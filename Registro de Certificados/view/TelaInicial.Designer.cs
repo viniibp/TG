@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaInicial));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.lbl_registro = new System.Windows.Forms.Label();
             this.lbl_cargo = new System.Windows.Forms.Label();
@@ -56,11 +57,8 @@
             this.baseCursos = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button_logoff = new System.Windows.Forms.Button();
-            this.button_next = new System.Windows.Forms.Button();
-            this.button_back = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_foto)).BeginInit();
@@ -77,7 +75,6 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.lbl_registro);
             this.panel1.Controls.Add(this.lbl_cargo);
@@ -86,6 +83,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(809, 84);
             this.panel1.TabIndex = 1;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(32, 192);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Experiencia";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -199,7 +206,7 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.progressBar1);
             this.panel3.Controls.Add(this.pb_foto);
-            this.panel3.Location = new System.Drawing.Point(1, 25);
+            this.panel3.Location = new System.Drawing.Point(1, 14);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 165);
             this.panel3.TabIndex = 0;
@@ -218,7 +225,7 @@
             this.pb_foto.Image = global::Registro_de_Certificados.Properties.Resources.user_placeholder;
             this.pb_foto.ImageLocation = "";
             this.pb_foto.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb_foto.InitialImage")));
-            this.pb_foto.Location = new System.Drawing.Point(46, 10);
+            this.pb_foto.Location = new System.Drawing.Point(46, 8);
             this.pb_foto.Name = "pb_foto";
             this.pb_foto.Size = new System.Drawing.Size(151, 128);
             this.pb_foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -366,9 +373,8 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.button_logoff);
-            this.panel4.Controls.Add(this.button_next);
-            this.panel4.Controls.Add(this.button_back);
             this.panel4.Controls.Add(this.panel3);
             this.panel4.Controls.Add(this.tableLayoutPanel3);
             this.panel4.Controls.Add(this.tableLayoutPanel1);
@@ -382,31 +388,13 @@
             // 
             // button_logoff
             // 
-            this.button_logoff.Location = new System.Drawing.Point(161, 196);
+            this.button_logoff.Location = new System.Drawing.Point(143, 192);
             this.button_logoff.Name = "button_logoff";
             this.button_logoff.Size = new System.Drawing.Size(75, 23);
             this.button_logoff.TabIndex = 8;
             this.button_logoff.Text = "Disconnect";
             this.button_logoff.UseVisualStyleBackColor = true;
             this.button_logoff.Click += new System.EventHandler(this.button_logoff_Click);
-            // 
-            // button_next
-            // 
-            this.button_next.Location = new System.Drawing.Point(161, 0);
-            this.button_next.Name = "button_next";
-            this.button_next.Size = new System.Drawing.Size(75, 23);
-            this.button_next.TabIndex = 7;
-            this.button_next.Text = "Next";
-            this.button_next.UseVisualStyleBackColor = true;
-            // 
-            // button_back
-            // 
-            this.button_back.Location = new System.Drawing.Point(11, 0);
-            this.button_back.Name = "button_back";
-            this.button_back.Size = new System.Drawing.Size(75, 23);
-            this.button_back.TabIndex = 6;
-            this.button_back.Text = "Back";
-            this.button_back.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -423,20 +411,9 @@
             // 
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(608, 24);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Experiencia";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // TelaInicial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1064, 681);
             this.Controls.Add(this.button2);
@@ -493,8 +470,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button_logoff;
-        private System.Windows.Forms.Button button_next;
-        private System.Windows.Forms.Button button_back;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Timer timer;
         private CircularProgressBar.CircularProgressBar circularProgressBar1;
