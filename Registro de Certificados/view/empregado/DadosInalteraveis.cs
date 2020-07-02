@@ -45,5 +45,10 @@ namespace Registro_de_Certificados.view.empregado
         {
             Dispose();
         }
+
+        private void DadosInalteraveis_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
