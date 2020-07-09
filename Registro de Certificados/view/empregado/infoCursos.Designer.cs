@@ -43,6 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.baseCurso = new System.Windows.Forms.Panel();
             this.flow_cursos = new System.Windows.Forms.FlowLayoutPanel();
+            this.button_voltar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.baseCurso.SuspendLayout();
             this.SuspendLayout();
@@ -183,17 +184,29 @@
             this.baseCurso.Controls.Add(this.flow_cursos);
             this.baseCurso.Location = new System.Drawing.Point(12, 265);
             this.baseCurso.Name = "baseCurso";
-            this.baseCurso.Size = new System.Drawing.Size(1040, 404);
+            this.baseCurso.Size = new System.Drawing.Size(1040, 375);
             this.baseCurso.TabIndex = 1;
             // 
             // flow_cursos
             // 
             this.flow_cursos.AutoSize = true;
             this.flow_cursos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flow_cursos.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flow_cursos.Location = new System.Drawing.Point(2, 3);
             this.flow_cursos.Name = "flow_cursos";
             this.flow_cursos.Size = new System.Drawing.Size(0, 0);
             this.flow_cursos.TabIndex = 0;
+            // 
+            // button_voltar
+            // 
+            this.button_voltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.button_voltar.Location = new System.Drawing.Point(963, 649);
+            this.button_voltar.Name = "button_voltar";
+            this.button_voltar.Size = new System.Drawing.Size(75, 23);
+            this.button_voltar.TabIndex = 2;
+            this.button_voltar.Text = "Voltar";
+            this.button_voltar.UseVisualStyleBackColor = true;
+            this.button_voltar.Click += new System.EventHandler(this.button_voltar_Click);
             // 
             // InfoCursos
             // 
@@ -202,6 +215,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Registro_de_Certificados.Properties.Resources.fundo_azul_small2;
             this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.Controls.Add(this.button_voltar);
             this.Controls.Add(this.baseCurso);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -235,5 +249,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel baseCurso;
         private System.Windows.Forms.FlowLayoutPanel flow_cursos;
+        private System.Windows.Forms.Button button_voltar;
     }
 }

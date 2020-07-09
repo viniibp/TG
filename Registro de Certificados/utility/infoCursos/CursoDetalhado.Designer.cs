@@ -47,7 +47,6 @@
             // check_valido
             // 
             this.check_valido.AutoSize = true;
-            this.check_valido.Enabled = false;
             this.check_valido.Location = new System.Drawing.Point(38, 40);
             this.check_valido.Name = "check_valido";
             this.check_valido.Size = new System.Drawing.Size(15, 14);

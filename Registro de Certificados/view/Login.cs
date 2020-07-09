@@ -10,20 +10,20 @@ namespace Registro_de_Certificados
         public Login()
         {
             InitializeComponent();
-            txt_username.Text = "admin";
-            txt_senha.Text = "123";
-            var funcionario = Usuario().Entrar();
-            TelaInicial homeTela = new TelaInicial(funcionario);
+            //txt_username.Text = "admin";
+            //txt_senha.Text = "123";
+            //var funcionario = Usuario().Entrar();
+            //TelaInicial homeTela = new TelaInicial(funcionario);
 
-            Hide();
-            homeTela.ShowDialog();
+            //Hide();
+            //homeTela.ShowDialog();
 
-            if (homeTela.IsDisposed)
-            {
-                Session.CloseSession();
-                LimparCampos();
-                Show();
-            }
+            //if (homeTela.IsDisposed)
+            //{
+            //    Session.CloseSession();
+            //    LimparCampos();
+            //    Show();
+            //}
         }
 
         private void button1_Click(object sender, EventArgs e)

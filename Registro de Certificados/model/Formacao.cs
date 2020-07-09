@@ -27,6 +27,7 @@ namespace Registro_de_Certificados.model
         public bool Valido { get; set; }
         public int Pontos { get; set; }
         public int Peso { get; set; }
+        public DateTime DataRegistro { get; set; }
 
         public int DefinirPontos(int pontos) => Pontos = pontos * Peso;
         

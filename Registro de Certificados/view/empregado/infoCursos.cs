@@ -53,5 +53,10 @@ namespace Registro_de_Certificados.view.empregado
         {
             Dispose();
         }
+
+        private void button_voltar_Click(object sender, System.EventArgs e)
+        {
+            Dispose();
+        }
     }
 }

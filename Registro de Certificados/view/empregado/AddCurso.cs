@@ -92,5 +92,10 @@ namespace Registro_de_Certificados.view.empregado
         {
 
         }
+
+        private void button_voltar_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 }

@@ -50,6 +50,7 @@
             this.button_salvar = new System.Windows.Forms.Button();
             this.combo_tipo = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.button_voltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic_certificado)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -310,6 +311,17 @@
             this.label7.Text = "Tipo de Curso";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
+            // button_voltar
+            // 
+            this.button_voltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button_voltar.Location = new System.Drawing.Point(800, 630);
+            this.button_voltar.Name = "button_voltar";
+            this.button_voltar.Size = new System.Drawing.Size(112, 37);
+            this.button_voltar.TabIndex = 22;
+            this.button_voltar.Text = "Voltar";
+            this.button_voltar.UseVisualStyleBackColor = true;
+            this.button_voltar.Click += new System.EventHandler(this.button_voltar_Click);
+            // 
             // AddCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -317,6 +329,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Registro_de_Certificados.Properties.Resources.fundo_azul_small2;
             this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.Controls.Add(this.button_voltar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.combo_tipo);
             this.Controls.Add(this.button_salvar);
@@ -375,5 +388,6 @@
         private System.Windows.Forms.Button button_salvar;
         private System.Windows.Forms.ComboBox combo_tipo;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button_voltar;
     }
 }
