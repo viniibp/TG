@@ -45,8 +45,8 @@ namespace Registro_de_Certificados.view.empregado
                 DataInicio = date_inicio.Value,
                 DataTermino = date_termino.Value,
                 Valido = true,
-                Peso = 3,
-                Pontos = 90
+                Peso = 2,
+                Pontos = 120
             };
             curso.URLCertificado = urlImagem(curso.Id.ToString());
 
